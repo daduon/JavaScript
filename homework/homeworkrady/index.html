@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Calculator and sounds</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container-2">
+    <div class="container-1">
+      <div class="calculator">
+        <p id="output-result"></p>
+      </div>
+      <div class="container">
+        <input type="text" id="result" readonly placeholder="0" ><br>
+        <input type="text" id="answer" readonly>
+        <button id="btn"><i class="fa fa-microphone fa-2x"></i></button>
+        <br>
+        <br>
+        <br>
+      <div class="col-1">
+        <form name="calculator">
+            <button class="operator" id="clear" onclick="cancel()" style="background: rgb(177, 172, 172);">C</button>
+            <button class="operator" id="backspace" style="background: rgb(177, 172, 172);" >CE</button>
+            <button class="operator" id="%"  style="background: rgb(177, 172, 172);">%</button>
+            <button class="operator" id="/" onclick="getOperator('/')"  style="background: rgb(55, 212, 252);">&#247;</button><br>
+            <button class="number" id="7" onclick="getNumber(7)" >7</button>
+            <button class="number" id="8" onclick="getNumber(8)">8</button>
+            <button class="number" id="9" onclick="getNumber(9)">9</button>
+            <button class="operator" id="*" onclick="getOperator('*')"  style="background: rgb(210, 247, 5);">&times;</button><br>
+            <button class="number" id="4" onclick="getNumber(4)">4</button>
+            <button class="number" id="5" onclick="getNumber(5)">5</button>
+            <button class="number" id="6" onclick="getNumber(6)">6</button>
+            <button class="operator" id="-"  onclick="getOperator('-')"  style="background: rgb(241, 141, 233);">-</button><br>
+            <button class="number" id="1" onclick="getNumber(1)" >1</button>
+            <button class="number" id="2" onclick="getNumber(2)">2</button>
+            <button class="number" id="3" onclick="getNumber(3)">3</button>
+            <button class="operator" id="+" onclick="getOperator('+')"  style="background: rgb(98, 143, 211);">+</button><br>
+            <button class="empty" id="empty"></button>
+            <button class="number" id="0" onclick="getNumber(0)">0</button>
+            <button class="empty" id="empty"></button>
+            <button class="operator" id="=" onclick="calculator('=')"  style="background: rgb(141, 4, 107);">=</button>
+          </form>
+        </div>
+      </div> 
+    </div> 
+  </div>
+  <script src="calculator_sound.js"></script>
+</body>
+</html>

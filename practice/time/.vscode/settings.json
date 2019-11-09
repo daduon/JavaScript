@@ -1,0 +1,12 @@
+{
+ "workbench.editor.tabCloseButton": "off",
+ "workbench.editor.closeOnFileDelete": true,
+ "workbench.editor.revealIfOpen": true,
+ "workbench.settings.openDefaultKeybindings": true,
+ "editor.fontSize": 10,
+	"editor.renderWhitespace": "all",
+	"editor.cursorBlinking": "solid",
+	"editor.minimap.maxColumn": 100,
+	"workbench.list.keyboardNavigation": "simple",
+	"workbench.colorTheme": "Abyss"
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" id="enter" readonly placeholder="0">
+                    <input type="text" id="answer" readonly style="color:red;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="getNumber(1)">
+                    <input type="button" value="2" onclick="getNumber(2)">
+                    <input type="button" value="3" onclick="getNumber(3)">
+                    <input type="button" value="+" onclick="getOperator('+')">
+                    <br>
+                    <input type="button" value="4" onclick="getNumber(4)">
+                    <input type="button" value="5" onclick="getNumber(5)">
+                    <input type="button" value="6" onclick="getNumber(6)">
+                    <input type="button" value="-" onclick="getOperator('-')">
+                    <br>
+                    <input type="button" value="7" onclick="getNumber(7)">
+                    <input type="button" value="8" onclick="getNumber(8)">
+                    <input type="button" value="9" onclick="getNumber(9)">
+                    <input type="button" value="x" onclick="getOperator('*')">
+                    <br>
+                    <input type="button" value="C" onclick="clearScreen()">
+                    <input type="button" value="0" onclick="getNumber(0)">
+                    <input type="button" value="=" onclick="calculator()">
+                    <input type="button" value="/" onclick="getOperator('/')">
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    background: #00ff00;
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    
+}
+li a{
+    text-decoration: none;
+    float: left;
+    padding: 12px 14px;
+}
+li a:hover{
+    background:rgb(173, 29, 29);
+    color:#fff;
+}
+li a:active{
+    background: #090914;
+    color:#ff0000;
+}

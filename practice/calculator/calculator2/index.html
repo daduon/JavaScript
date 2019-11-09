@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+</head>
+<body>
+  <form name="calculator">
+   <input type="text" name="screen" disabled>
+   <br>
+   <input type="button" value="C" onclick="calculator.screen.value = Math.sqrt(calculator.screen.value)">
+   <input type="button" value="1" onclick="calculator.screen.value +='1'">
+   <input type="button" value="2" onclick="calculator.screen.value +='2'">
+   <input type="button" value="3" onclick="calculator.screen.value +='3'">
+   <input type="button" value="CE" onclick="calculator.screen.value = calculator.screen.value.slice(0, -1)">
+
+  </form>
+</body>
+</html>

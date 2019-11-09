@@ -1,0 +1,22 @@
+/* body{
+ background: #000;
+} */
+h1{
+ font-size:50px;
+ /* color: rgb(221, 73, 5); */
+ text-align: center;
+ /* animation: colors 1s linear infinite  */
+}
+h2{
+ /* color: rgb(6, 108, 224); */
+ text-align: center;
+ font-size: 50px;
+}
+/* @keyframes colors {
+ 0%,100%{
+  filter: hue-rotate(0deg);
+ }
+ 50%{
+  filter: hue-rotate(360deg);
+ }
+} */

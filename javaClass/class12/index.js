@@ -1,0 +1,25 @@
+import Person from './Person.js';
+import Student from './Student.js';
+import Seller from './Seller.js';
+console.log("_ _ _ _ _ _ _ _");
+const person = new Person();
+person.setName("Bopha");
+person.getName();
+person.setProvince("siem reap");
+person.getProvince();
+
+const student = new Student();
+student.setRoom("B32");
+student.getRoom();
+student.read();
+console.log("_ _ _ _ _ _ _ _");
+const seller = new Seller();
+seller.setName("Vy Rya");
+seller.getName();
+seller.setProduct("BMC");
+seller.getProduct();
+seller.setMarket("Soriya");
+seller.getMarket();
+seller.setProduct("Computer");
+seller.getProduct();
+console.log("_ _ _ _ _ _ _ _");

@@ -1,0 +1,18 @@
+.container{
+    width:200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: #000;
+    text-align: center;
+}
+input{
+    border: 1px solid #fff;
+    outline: none;
+}
+input[type=button]{
+    background: rgb(88, 178, 206);
+    width:20%;
+    height:40px;
+    margin-top:10px;
+    border-radius:50%;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section id="credit_card">
+    <div>
+        <div class="body">  
+            <div class="card">
+                <div id="cardd">
+                    <div class="card_front">
+                        <img class="chip" src="https://dl.dropbox.com/s/g9ziq47bgyjkoe0/1555517878169.png?dl=0">
+                        <div class="number">
+                            <span><input type="text" id="destinationField1" value="" maxlength="4"></span>
+                            <span><input type="text" id="destinationField2" value="" maxlength="4"></span>
+                            <span><input type="text" id="destinationField3" value="" maxlength="4"></span>
+                            <span><input type="text" id="destinationField4" value="" maxlength="4"></span>
+                        </div>
+                        <div class="info">
+                                <div class="name">
+                                    <h6>CARD HOLDER</h6>
+                                    <textarea type="text" value="" id="destinationField5"></textarea>
+                                     
+                                </div>
+                                <div class="name">
+                                    <h6>EXPIRES</h6>
+                                    <div class="date">
+                                        <input type="text" value="" id="destinationField6">
+                                        <span>/</span>
+                                        <input type="text" value="" id="destinationField7">
+                                       
+                                    </div>
+                                </div>
+                        </div>
+                                <div class="logo">
+                                    <span>
+                                    <img  class="master" src="https://dl.dropbox.com/s/e1e3kqsn26cir5t/1555511033759.png?dl=0" alt="">
+                                    </span>
+                                </div>        
+                    </div>
+                    <div class="card_back">
+                            <div class="black_strip"></div>
+                            <div class="cover">
+                                <div class="w_strip"></div>
+                                <div class="n_strip">
+                                    <input type="number" id="destinationField8">
+                                </div>
+                            </div>
+                            <div>
+                                <img class="chip2" src="https://dl.dropbox.com/s/g9ziq47bgyjkoe0/1555517878169.png?dl=0">
+                                <img  class="master2" src="https://dl.dropbox.com/s/e1e3kqsn26cir5t/1555511033759.png?dl=0" alt="">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="bottom">
+            <div class="cardNumber"> 
+                <h4>CARD NUMBER</h4>
+                <input type="text" id="sourceField1" onkeyup="changea(); maximumLnth(this);" maxlength="4">
+                <input type="text" id="sourceField2" onkeyup="changeb();  maximumLnth(this);" maxlength="4">
+                <input type="text" id="sourceField3" onkeyup="changec();  maximumLnth(this);" maxlength="4">
+                <input type="text" id="sourceField4" onkeyup="changef();  maximumLnth(this);" maxlength="4">
+            </div>
+            <div class="cardHolder">
+                <h4>CARD HOLDER</h4>
+                <input type="text" id="sourceField5" onkeyup="changeg();">
+            </div>
+            <div class="expires">
+                <div>
+                    <h4>EXPIRATION DATE</h4>
+                    <span><input type="text" id="sourceField6" onkeyup="changeh();  maximumLnth(this);"  maxlength="2"></span>
+                    <span><input type="text" id="sourceField7" onkeyup="changei();   maximumLnth();"  maxlength="2"></span>
+                </div>
+                <div class="cvv">
+                <h4>CVV</h4>
+                    <span><input type="text" maxlength="3" id="sourceField8" onclick="myFunction();  maximumLnth(this);" onkeyup="changej();"></span>
+                </div>
+            </div> 
+            <button onclick="nextFunction()">SUBMIT</button>
+        </div>
+
+        </div> 
+</section>
+   <script src="js/card.js"></script>
+</body>
+</html>

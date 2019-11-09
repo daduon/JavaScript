@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+</head>
+<body>
+   <script src="index.js" type="module"></script>
+</body>
+</html>
+
+const url = "website";
+const method = "GET";
+const syc = trur;
+cosnt ajax = new XMLHttpRuest();
+ajax.open(method,url,syc);
+ajax.onload = ()=>{
+   const data = json.parse(ajax.response);
+   console.log(data);
+}
+ajax.send();
+
+const url = "website";
+fetch(url)
+.then(response => response.json())
+.then(data =>{
+   console.log(data);
+})
+
+const url = "website";
+asyc function data(){
+   const esponse = await fetch(url);
+   const data = await response.Json();
+   console.log(data);
+}
+data();
